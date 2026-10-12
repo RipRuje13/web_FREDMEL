@@ -1,0 +1,33 @@
+# ============================================================================
+#  Archivos y carpetas que NO deben subirse a GitHub
+# ============================================================================
+
+# --- Credenciales y configuración sensible ---
+# El archivo con las credenciales SMTP reales NUNCA debe versionarse.
+config.php
+.env
+.env.*
+*.pem
+*.key
+
+# NOTA: config.example.php SÍ se versiona (es la plantilla sin datos reales).
+
+# --- Logs y archivos temporales ---
+*.log
+error_log
+*.tmp
+*.bak
+*.swp
+
+# --- Archivos del sistema operativo ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Carpetas de editores / IDE ---
+.vscode/
+.idea/
+
+# --- Dependencias (si en el futuro se usa Composer) ---
+/vendor/
+composer.phar

@@ -1,0 +1,271 @@
+<!--
+Desarrollado por:
+Programador: Rogelio Noriega
+Diseño: Rogelio Noriega 
+Github: RipRuje13
+IG: rip.ruje13
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | FREDMEL - Abogados & Consultores Jurídicos</title>
+  <!-- Favicon / Icono de la pestaña -->
+<link rel="icon" type="image/png" href="/images/Escudo.png">
+  
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/Contacto.css">
+</head>
+<body>
+
+  <!-- Barra Superior Informativa -->
+  <div class="top-bar">
+    <div class="top-bar-info">
+      <a href="tel:2225223079"><i class="fa-solid fa-phone"></i> 222 522 3079</a>
+      <a href="mailto:fredmel834@gmail.com"><i class="fa-solid fa-envelope"></i> fredmel834@gmail.com</a>
+    </div>
+    <div class="top-bar-social">
+      <span><i class="fa-solid fa-clock icon-gold"></i> Atención previa cita</span>
+      <a href="https://www.facebook.com/profile.php?id=61579245629472" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/fredmel834" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@fredmel01" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <!-- Encabezado / Navegación -->
+  <header>
+    <div class="logo-container">
+      <img class="logo-mark" src="/images/Escudo.png" alt="Logotipo FREDMEL">
+      <div class="logo-text">
+        <h1>FREDMEL</h1>
+        <span>Abogados & Consultores Jurídicos</span>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fa-solid fa-bars"></i><span>Menú</span>
+    </button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Áreas de Práctica</a></li>
+        <li><a href="Contacto.html" class="active">Contacto</a></li>
+        <!-- Botón para alternar tema Claro/Oscuro -->
+        <li>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar modo de color">
+            <i class="fa-solid fa-moon"></i> <span id="theme-text">Oscuro</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cabecera de la página -->
+  <section class="page-header">
+    <h2 class="scroll-reveal scroll-reveal--header">Contacto</h2>
+    <!--<p class="breadcrumb">Inicio / Contacto</p>-->
+  </section>
+
+  <!-- Sección Principal de Contacto -->
+  <main class="contact-container">
+
+    <!-- Información de Contacto -->
+    <div class="contact-info-card scroll-reveal scroll-reveal--left">
+      <h3>Atención Personalizada</h3>
+      <p>Estamos listos para atender sus dudas y brindarle la asesoría legal que necesita. Contáctenos directamente a través de cualquiera de nuestros canales oficiales.</p>
+
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div>
+          <h4>Teléfono de Contacto</h4>
+          <a href="tel:2225223079">222 522 3079</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div>
+          <h4>Correo Electrónico</h4>
+          <a href="mailto:fredmel834@gmail.com">fredmel834@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <div>
+          <h4>Horario de Atención</h4>
+          <span>Previa Cita</span>
+        </div>
+      </div>
+
+      <div class="whatsapp-btn-container">
+        <a href="https://wa.me/522225223079" target="_blank" class="btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+        </a>
+      </div>
+
+      <div class="social-section">
+        <h4>Síguenos en Redes Sociales</h4>
+        <div class="social-links-grid">
+          <a href="https://www.instagram.com/fredmel834" target="_blank" class="social-btn instagram">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61579245629472" target="_blank" class="social-btn facebook">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </a>
+          <a href="https://www.tiktok.com/@fredmel01" target="_blank" class="social-btn tiktok">
+            <i class="fa-brands fa-tiktok"></i> TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de Mensaje -->
+    <div class="contact-form-card scroll-reveal scroll-reveal--right">
+      <h3>Envíenos un Mensaje</h3>
+      <p>Complete el siguiente formulario y un consultor legal se pondrá en contacto con usted a la brevedad.</p>
+
+      <form action="procesar-contacto.php" method="POST" id="form-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej. Juan Pérez" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com" autocomplete="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="10 dígitos" autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto / Área de Interés</label>
+          <select id="asunto" name="asunto" class="form-control">
+            <option value="defensa-fiscal">Derecho Fiscal</option>
+            <option value="registro-marca">Registro de Marca (IMPI)</option>
+            <option value="corporativo">Derecho Mercantil</option>
+            <option value="civil-familia">Derecho Civil y Familia</option>
+            <option value="laboral">Derecho Laboral</option>
+            <option value="otro">Otro Asunto</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Describa brevemente su consulta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-gold-submit">Enviar Mensaje</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 FREDMEL - Abogados & Consultores Jurídicos. Todos los derechos reservados.</p>
+    <p><a href="TyC.html">Aviso de Privacidad</a></p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/fredmel834" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61579245629472" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@fredmel01" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Script para la funcionalidad del Modo Claro / Oscuro -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeText = document.getElementById('theme-text');
+    const themeIcon = toggleBtn.querySelector('i');
+
+    // Comprobar preferencia previa guardada
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeIcon.className = 'fa-solid fa-sun';
+      themeText.textContent = 'Claro';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+
+      if (isDark) {
+        themeIcon.className = 'fa-solid fa-sun';
+        themeText.textContent = 'Claro';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeIcon.className = 'fa-solid fa-moon';
+        themeText.textContent = 'Oscuro';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const primaryNav = document.getElementById('primary-nav');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = primaryNav.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.querySelector('i').className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+
+    function mostrarNotificacion(titulo, mensaje, tipo = 'success') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = `toast toast--${tipo}`;
+      const icon = document.createElement('i');
+      icon.className = `fa-solid ${tipo === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation'} toast-icon`;
+      icon.setAttribute('aria-hidden', 'true');
+      const content = document.createElement('div');
+      content.className = 'toast-content';
+      const heading = document.createElement('strong');
+      heading.textContent = titulo;
+      const text = document.createElement('p');
+      text.textContent = mensaje;
+      content.append(heading, text);
+      const close = document.createElement('button');
+      close.type = 'button';
+      close.className = 'toast-close';
+      close.setAttribute('aria-label', 'Cerrar');
+      close.textContent = '×';
+      const dismiss = () => { toast.classList.remove('show'); setTimeout(() => toast.remove(), 350); };
+      close.addEventListener('click', dismiss);
+      toast.append(icon, content, close);
+      container.appendChild(toast);
+      setTimeout(() => toast.classList.add('show'), 50);
+      setTimeout(() => { if (toast.isConnected) dismiss(); }, 6000);
+    }
+
+    const status = new URLSearchParams(window.location.search).get('status');
+    const notifications = {
+      success: ['¡Mensaje enviado!', 'Hemos recibido su consulta. Un consultor se pondrá en contacto a la brevedad.', 'success'],
+      error_datos: ['Datos incompletos', 'Por favor verifique que los campos requeridos estén completos y sean válidos.', 'error'],
+      error_envio: ['Error de envío', 'Hubo un problema al enviar el mensaje. Intente de nuevo o contáctenos vía WhatsApp.', 'error']
+    };
+    if (notifications[status]) mostrarNotificacion(...notifications[status]);
+    if (status) window.history.replaceState({}, document.title, window.location.pathname);
+  </script>
+
+</body>
+</html>

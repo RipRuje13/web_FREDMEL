@@ -1,0 +1,33 @@
+# ============================================================================
+#  FREDMEL - Reglas de seguridad para Apache (GoDaddy)
+# ============================================================================
+
+# Evita que se liste el contenido de las carpetas.
+Options -Indexes
+
+# ---------------------------------------------------------------------------
+# Bloquea el acceso por web a archivos sensibles.
+# Si alguien intenta abrir config.php, .env, etc. desde el navegador,
+# el servidor responderá 403 (prohibido).
+# ---------------------------------------------------------------------------
+
+# Apache 2.4+
+<IfModule mod_authz_core.c>
+    <FilesMatch "(^\.env|^\.htaccess$|config\.php$|config\.example\.php$|composer\.(json|lock)$|\.(ini|log|sql|md)$)">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+# Apache 2.2 (compatibilidad)
+<IfModule !mod_authz_core.c>
+    <FilesMatch "(^\.env|^\.htaccess$|config\.php$|config\.example\.php$|composer\.(json|lock)$|\.(ini|log|sql|md)$)">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Impide el acceso directo a las librerías PHP (PHPMailer) y a los
+# archivos .php de la carpeta src/ que no deben ejecutarse por sí solos.
+# ---------------------------------------------------------------------------
+RedirectMatch 403 ^/(PHPMailer|src)/.*\.php$

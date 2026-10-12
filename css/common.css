@@ -1,0 +1,116 @@
+/* ===================================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL (MODO CLARO POR DEFECTO)
+   =================================================== */
+:root {
+  /* Fondos Claro */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-topbar: #0B192C; /* Se conserva oscuro en la barra superior para elegancia */
+  --header-bg: #FFFFFF;
+  
+  /* Colores de marca */
+  --primary-navy: #0B192C;
+  --navy-light: #1E293B;
+  --gold-main: #B38728;
+  --gold-light: #C5A059;
+  --gold-gradient: linear-gradient(135deg, #A27B2B 0%, #C5A059 50%, #8C6219 100%);
+  
+  /* Textos */
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --text-white: #FFFFFF;
+  --border-color: #E2E8F0;
+
+  /* Fuentes */
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Montserrat', sans-serif;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Variables para Modo Oscuro opcional */
+body.dark-mode {
+  --bg-primary: #060E1A;
+  --bg-secondary: #0B192C;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-topbar: #060E1A;
+  --header-bg: #0B192C;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --border-color: rgba(197, 160, 89, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Transición entre páginas al navegar desde el menú. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  html::view-transition-old(root) {
+    animation: wipe-out 1.4s ease forwards;
+  }
+
+  html::view-transition-new(root) {
+    animation: wipe-in 1.4s ease forwards;
+  }
+}
+
+@keyframes wipe-out {
+  from { clip-path: inset(0 0 0 0); }
+  to { clip-path: inset(0 0 100% 0); }
+}
+
+@keyframes wipe-in {
+  from { clip-path: inset(100% 0 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+/* Botón flotante o integrado para alternar tema */
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--gold-main);
+  color: var(--gold-main);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--gold-main);
+  color: #FFF;
+}
+
+/* Utilidades */
+.icon-gold { color: var(--gold-main); }
+.icon-offset-left { margin-left: 8px; }
+.icon-large { font-size: 1.3rem; }
+.text-muted { color: var(--text-muted); }
+.mb-20 { margin-bottom: 20px; }
+.grid-single-column { grid-template-columns: 1fr; }

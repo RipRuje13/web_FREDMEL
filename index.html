@@ -1,0 +1,180 @@
+<!--
+Desarrollado por:
+Programador: Rogelio Noriega
+Diseño: Rogelio Noriega 
+Github: RipRuje13
+IG: rip.ruje13
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FREDMEL | Abogados & Consultores Jurídicos</title>
+  <!-- Favicon / Icono de la pestaña -->
+<link rel="icon" type="image/png" href="../images/Escudo.png">
+  
+  <!-- Fuentes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+  <!-- Barra Superior Informativa -->
+  <div class="top-bar">
+    <div class="top-bar-info">
+      <a href="tel:2225223079"><i class="fa-solid fa-phone"></i> 222 522 3079</a>
+      <a href="mailto:fredmel834@gmail.com"><i class="fa-solid fa-envelope"></i> fredmel834@gmail.com</a>
+    </div>
+    <div class="top-bar-social">
+      <span><i class="fa-solid fa-clock icon-gold"></i> Atención previa cita</span>
+      <a href="https://www.facebook.com/profile.php?id=61579245629472" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/fredmel834" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@fredmel01" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <!-- Encabezado / Navegación -->
+  <header>
+    <div class="logo-container">
+      <img class="logo-mark" src="/images/Escudo.png" alt="Logotipo FREDMEL">
+      <div class="logo-text">
+        <h1>FREDMEL</h1>
+        <span>Abogados & Consultores Jurídicos</span>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fa-solid fa-bars"></i><span>Menú</span>
+    </button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Áreas de Práctica</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <!-- Botón para alternar tema Claro/Oscuro -->
+        <li>
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar modo de color">
+            <i class="fa-solid fa-moon"></i> <span id="theme-text">Oscuro</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero" id="inicio">
+    <div class="hero-content scroll-reveal scroll-reveal--hero">
+      <p class="hero-subtitle">Asesoría Legal Especializada</p>
+      <h2 class="hero-title">Experiencia, Eficiencia y Confianza Jurídica</h2>
+      <p class="hero-description">
+        Brindamos soluciones legales integrales con el más alto nivel de profesionalismo para proteger sus intereses corporativos, personales y laborales.
+      </p>
+      <a href="https://wa.me/522225223079" target="_blank" class="btn-gold">
+        Contáctanos Hoy <i class="fa-solid fa-arrow-right icon-offset-left"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección Áreas de Práctica -->
+  <section class="services" id="servicios">
+    <h2 class="section-title scroll-reveal">Nuestras Especialidades</h2>
+    <div class="section-divider scroll-reveal scroll-reveal--divider"></div>
+
+    <div class="services-grid">
+      <div class="service-card scroll-reveal scroll-reveal--card">
+        <i class="fa-solid fa-building-columns"></i>
+        <h3>Derecho Fiscal</h3>
+        <p>Constitución de empresas, contratos mercantiles, fusiones y blindaje legal para negocios y corporativos.</p>
+      </div>
+
+      <div class="service-card scroll-reveal scroll-reveal--card">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <h3>Derecho Civil y Familia</h3>
+        <p>Atención en litigios civiles, juicios sucesorios, contratos, divorcios y regularización de propiedades.</p>
+      </div>
+
+      <div class="service-card scroll-reveal scroll-reveal--card">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Derecho Laboral</h3>
+        <p>Defensa y asesoría preventiva tanto para empresas como para trabajadores en materia laboral.</p>
+      </div>
+
+      <div class="service-card scroll-reveal scroll-reveal--card">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Marcas</h3>
+        <p>Registro, protección y defensa de marcas, patentes y derechos de propiedad intelectual para blindar tu identidad comercial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner de Llamado a la Acción (CTA) -->
+  <section class="cta-banner" id="contacto">
+    <div class="cta-text scroll-reveal scroll-reveal--left">
+      <h2>Consultoría Legal y Defensa Especializada</h2>
+      <p>Estamos listos para atender su caso con la confidencialidad que merece.</p>
+    </div>
+    <div class="cta-box scroll-reveal scroll-reveal--right">
+      <a href="tel:2225223079"><i class="fa-solid fa-phone"></i> 222 522 3079</a>
+      <a href="mailto:fredmel834@gmail.com"><i class="fa-solid fa-envelope"></i> fredmel834@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 FREDMEL - Abogados & Consultores Jurídicos. Todos los derechos reservados.</p>
+    <p><a href="TyC.html">Aviso de Privacidad</a></p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/fredmel834" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61579245629472" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@fredmel01" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script para la funcionalidad del Modo Claro / Oscuro -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeText = document.getElementById('theme-text');
+    const themeIcon = toggleBtn.querySelector('i');
+
+    // Comprobar preferencia previa
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeIcon.className = 'fa-solid fa-sun';
+      themeText.textContent = 'Claro';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+
+      if (isDark) {
+        themeIcon.className = 'fa-solid fa-sun';
+        themeText.textContent = 'Claro';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeIcon.className = 'fa-solid fa-moon';
+        themeText.textContent = 'Oscuro';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const primaryNav = document.getElementById('primary-nav');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = primaryNav.classList.toggle('menu-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.querySelector('i').className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+  </script>
+
+</body>
+</html>
